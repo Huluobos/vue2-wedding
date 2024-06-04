@@ -85,6 +85,100 @@ export default {
       pageSize:10,
       total:0,
 
+
+      testJson:[
+        {
+          "id": 1,
+          "uId": "1711213050048",
+          "type": 1,
+          "imgIndex": 1001,
+          "name": "新郎:张博一",
+          "content": "大家好，我是新郎 ！",
+          "cTime": "2024-04-03 20:58:00"
+        },
+        {
+          "id": 3,
+          "uId": "1711213275838",
+          "type": 1,
+          "imgIndex": 1002,
+          "name": "新娘:王莹莹",
+          "content": "大家好，我是新娘 ！",
+          "cTime": "2024-04-03 20:58:00"
+        },
+        {
+          "id": 27,
+          "uId": "1711211795172",
+          "type": 1,
+          "imgIndex": 1001,
+          "name": "新郎:",
+          "content": "感谢大家能来参加我们的婚礼 ! 也由衷的感谢大家的祝福！",
+          "cTime": "2024-04-03 20:58:00"
+        },
+        {
+          "id": 59,
+          "uId": "23",
+          "type": 1,
+          "imgIndex": 16,
+          "name": "刘莹",
+          "content": "真心地祝愿你能找到自己喜欢的那个人，愿你们在以后的生活中相互扶持，白头到老",
+          "cTime": "2024-04-03 21:00:22"
+        },
+        {
+          "id": 60,
+          "uId": "24",
+          "type": 1,
+          "imgIndex": 1,
+          "name": "潇儿",
+          "content": "恭喜发财！",
+          "cTime": "2024-04-03 21:00:22"
+        },
+        {
+          "id": 43,
+          "uId": "7",
+          "type": 1,
+          "imgIndex": 3,
+          "name": "李明昭",
+          "content": "xx人民发来贺电",
+          "cTime": "2024-04-03 21:03:51"
+        },
+        {
+          "id": 44,
+          "uId": "8",
+          "type": 1,
+          "imgIndex": 1,
+          "name": "陈博",
+          "content": "xx人民发来贺电",
+          "cTime": "2024-04-03 21:06:51"
+        },
+        {
+          "id": 50,
+          "uId": "14",
+          "type": 1,
+          "imgIndex": 7,
+          "name": "徐春艳",
+          "content": "恭喜老同学！",
+          "cTime": "2024-04-03 21:07:01"
+        },
+        {
+          "id": 51,
+          "uId": "15",
+          "type": 1,
+          "imgIndex": 8,
+          "name": "鞠海英",
+          "content": "恭喜王主任走入婚姻的殿堂，祝您们白头到老，恩爱一生",
+          "cTime": "2024-04-03 21:07:09"
+        },
+        {
+          "id": 49,
+          "uId": "13",
+          "type": 1,
+          "imgIndex": 6,
+          "name": "姜海波",
+          "content": "沾沾喜气，明年我也结婚",
+          "cTime": "2024-04-03 21:09:22"
+        }
+      ]
+
     }
   },
   computed: {
@@ -280,6 +374,8 @@ export default {
           let middle= this.$refs["vanListScroll"];
           middle.scrollTop = middle.scrollHeight;
         })
+      }).catch(()=>{
+        this.wxChatData = this.testJson
       })
     },
   },
