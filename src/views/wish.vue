@@ -113,8 +113,8 @@ export default {
     },
     // 拼接图片头像 url
     getImageUrl(index) {
-      // return require('@/assets/icons/B' + index + '.png'); // 使用require函数确保webpack可以处理路径
-      return index ? 'http://www.huluobos.com/cdn/B' + index + '.png' : 'http://www.huluobos.com/cdn/B' + this.getRandomNumber() + '.png'
+      return require('@/assets/cdn/B' + index + '.png'); // 使用require函数确保webpack可以处理路径
+      // return index ? 'http://www.huluobos.com/cdn/B' + index + '.png' : 'http://www.huluobos.com/cdn/B' + this.getRandomNumber() + '.png'
 
     },
     // 点击更改昵称按钮

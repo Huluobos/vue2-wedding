@@ -41,12 +41,12 @@ export default {
   name: 'mapPage',
   data(){
     return{
-      map1:'http://www.huluobos.com/map/map1.jpg',
-      map2:'http://www.huluobos.com/map/map2.jpg',
-      map3:'http://www.huluobos.com/map/map3.jpg',
-      map41:'http://www.huluobos.com/map/map41.jpg',
-      map42:'http://www.huluobos.com/map/map42.jpg',
-      map5:'http://www.huluobos.com/map/map5.jpg',
+      map1:require('@/assets/map/map1.jpg'),
+      map2:require('@/assets/map/map2.jpg'),
+      map3:require('@/assets/map/map3.jpg'),
+      map41:require('@/assets/map/map41.jpg'),
+      map42:require('@/assets/map/map42.jpg'),
+      map5:require('@/assets/map/map5.jpg'),
 
       baseType:'.jpg',
       place:"婚宴地址",
