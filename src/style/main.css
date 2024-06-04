@@ -1,0 +1,21 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border-color: #b4a078;
+    box-sizing: border-box;
+
+}
+ul li{
+    list-style: none;
+}
+html, body {
+  /*width: 100%;*/
+  /*height: 100%;*/
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
